@@ -51,20 +51,21 @@ Output: 2
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.4 MB  
-**Submitted:** 2026-10-25T18:18:58.558Z  
+**Runtime:** 3 ms (beats 38.41%)  
+**Memory:** 45.9 MB (beats 93.65%)  
+**Submitted:** 2026-10-25T18:26:08.419Z  
 
 ```java
 class Solution {
     public boolean dfs(int [][]grid,boolean [][]visited,int i,int j)
     {
+                boolean closed = true;
         visited[i][j]=true;
             if(i==0||j==0||i==grid.length-1||j==grid[0].length-1){
-                return false;
+                closed= false;
             }
 
-        boolean closed = true;
+        // boolean closed = true;
         int []dr = {0,0,-1,1};
         int []dc = {1,-1,0,0};
         for(int k=0;k<4;k++){
@@ -74,11 +75,12 @@ class Solution {
             //we need to check that grid[nr][nc]==0 and should not on edge
             if(nr>=0 && nc>=0 && nc<grid[0].length && nr<grid.length){
                 if(grid[nr][nc]==0 && visited[nr][nc]==false){
-                    //visited[nr][nc]=true;
+                    // visited[nr][nc]=true;
                     if(dfs(grid,visited,nr,nc)){
                         continue;
                     }
                     else{
+                        // visited[nr][nc]=true;
                         closed = false;
                     }
                 }
@@ -94,7 +96,7 @@ class Solution {
         for(int i=0;i<grid.length;i++){
             for(int j=0;j<grid[0].length;j++){
                 if(grid[i][j]==0 && visited[i][j]==false){
-                    visited[i][j]=true;
+                    // visited[i][j]=true;
                     if(dfs(grid,visited,i,j)){
                         count++;
                     }
