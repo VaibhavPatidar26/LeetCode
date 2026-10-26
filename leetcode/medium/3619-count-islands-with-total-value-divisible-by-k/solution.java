@@ -1,5 +1,5 @@
 class Solution {
-    static int target = 0;
+    static long target = 0;
 
     private void dfsSum(int[][] grid, boolean[][] visited, int i, int j) {
         visited[i][j] = true;
