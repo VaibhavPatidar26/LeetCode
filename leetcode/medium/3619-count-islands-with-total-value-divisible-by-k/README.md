@@ -46,13 +46,13 @@ The grid contains six islands, each with a total value that is divisible by 3.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms  
-**Memory:** 44.2 MB  
-**Submitted:** 2026-10-26T12:08:18.188Z  
+**Runtime:** 341 ms (beats 5.10%)  
+**Memory:** 120 MB (beats 15.68%)  
+**Submitted:** 2026-10-26T12:11:07.507Z  
 
 ```java
 class Solution {
-    static int target = 0;
+    static long target = 0;
 
     private void dfsSum(int[][] grid, boolean[][] visited, int i, int j) {
         visited[i][j] = true;
