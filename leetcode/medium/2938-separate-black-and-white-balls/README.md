@@ -57,9 +57,9 @@ Explanation: All the black balls are already grouped to the right.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 9.2 MB  
-**Submitted:** 2026-11-11T10:56:20.709Z  
+**Runtime:** 10 ms (beats 26.08%)  
+**Memory:** 17.3 MB (beats 11.42%)  
+**Submitted:** 2026-11-11T10:56:26.110Z  
 
 ```cpp
 class Solution {
