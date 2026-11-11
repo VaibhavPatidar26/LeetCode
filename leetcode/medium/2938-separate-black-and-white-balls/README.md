@@ -58,8 +58,8 @@ Explanation: All the black balls are already grouped to the right.
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 7.5 MB  
-**Submitted:** 2026-11-11T10:56:12.198Z  
+**Memory:** 9.2 MB  
+**Submitted:** 2026-11-11T10:56:20.709Z  
 
 ```cpp
 class Solution {
