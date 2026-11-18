@@ -9,9 +9,11 @@ public:
             }
             else{
                 if(st.top()!=s[i]){
-                    count++; 
+                    count++;
+                    if(!st.empty()) st.pop(); 
+                   
                 }
-                st.pop();
+                if(!st.empty()) st.pop(); 
             }
         }
         return count;
