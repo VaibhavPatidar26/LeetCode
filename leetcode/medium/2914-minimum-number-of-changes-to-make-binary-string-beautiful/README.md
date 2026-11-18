@@ -61,9 +61,9 @@ Explanation: We don't need to make any changes as the string "0000" is beautiful
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 7.9 MB  
-**Submitted:** 2026-11-18T12:12:27.389Z  
+**Runtime:** 9 ms (beats 5.77%)  
+**Memory:** 14.9 MB (beats 5.13%)  
+**Submitted:** 2026-11-18T12:13:21.181Z  
 
 ```cpp
 class Solution {
@@ -77,9 +77,11 @@ public:
             }
             else{
                 if(st.top()!=s[i]){
-                    count++; 
+                    count++;
+                    if(!st.empty()) st.pop(); 
+                   
                 }
-                st.pop();
+                if(!st.empty()) st.pop(); 
             }
         }
         return count;
