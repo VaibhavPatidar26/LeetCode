@@ -62,8 +62,8 @@ Explanation: We don't need to make any changes as the string "0000" is beautiful
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 8 MB  
-**Submitted:** 2026-11-18T12:12:21.460Z  
+**Memory:** 7.9 MB  
+**Submitted:** 2026-11-18T12:12:27.389Z  
 
 ```cpp
 class Solution {
